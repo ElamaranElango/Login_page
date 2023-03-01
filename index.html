@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+        body{
+            background: linear-gradient(
+                to bottom right,
+                rgb(255, 255, 255) 0%,
+                rgb(255, 255, 255) 50%,
+                #5632a8 0%,
+                #5632a8 50%
+            );
+            padding: 301px;
+        }
+        .login{
+            position:absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            padding: 2rem;
+            margin: 1rem;
+            background-color:white;
+            width: 340px;
+            height: 500px;
+            border-radius: 20px;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+            
+
+        }
+        .login form input{
+            padding:15px;
+            width: 275px;
+            border-radius: 18px;
+            border: none;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+            outline: none;
+        }
+        .login form button{
+            padding: 10px;
+            width: 120px;
+            border-radius: 50px;
+            border: none;
+            background-color: rgb(146, 75, 212);
+            color: white;
+            box-shadow: 0px 0px 5px rgb(146, 75, 212),0px 0px 10px  rgb(146, 75, 212);
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <center>
+            
+            <form>
+                <h2 style="font-weight:bolder;">Login</h2><br>
+                <input type="email" name="email" placeholder="email address"><br>
+                <br>
+                <input type="password" name="password" placeholder="password"><br>
+                <br>
+                <br>
+                <button style=" cursor:pointer" onclick="msg()">LOGIN</button>
+            </form>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <P style=" cursor:pointer;color:royalblue;font-size:13px;">Sign Up</P>
+
+        </center>
+    </div>
+    
+    <script>
+        function msg(){
+            alert("Welcome to our site...")
+        }
+    </script>
+</body>
+</html>
